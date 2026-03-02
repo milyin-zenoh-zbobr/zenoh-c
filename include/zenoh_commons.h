@@ -900,10 +900,14 @@ typedef struct z_query_reply_options_t {
    */
   struct z_moved_encoding_t *encoding;
   /**
+   * @deprecated This field is deprecated and should not be used.
+   *
    * The congestion control to apply when routing the reply.
    */
   enum z_congestion_control_t congestion_control;
   /**
+   * @deprecated This field is deprecated and should not be used.
+   *
    * The priority of the reply.
    */
   enum z_priority_t priority;
@@ -934,10 +938,14 @@ typedef struct z_query_reply_options_t {
  */
 typedef struct z_query_reply_del_options_t {
   /**
+   * @deprecated This field is deprecated and should not be used.
+   *
    * The congestion control to apply when routing the reply.
    */
   enum z_congestion_control_t congestion_control;
   /**
+   * @deprecated This field is deprecated and should not be used.
+   *
    * The priority of the reply.
    */
   enum z_priority_t priority;
@@ -3114,11 +3122,6 @@ enum z_congestion_control_t z_internal_congestion_control_default_push(void);
  */
 ZENOHC_API
 enum z_congestion_control_t z_internal_congestion_control_default_request(void);
-/**
- * Returns the default congestion control value of zenoh response network messages, typically used for reply operations.
- */
-ZENOHC_API
-enum z_congestion_control_t z_internal_congestion_control_default_response(void);
 /**
  * Returns ``true`` if encoding is in non-default state, ``false`` otherwise.
  */
