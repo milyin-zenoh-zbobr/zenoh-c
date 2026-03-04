@@ -3115,11 +3115,6 @@ enum z_congestion_control_t z_internal_congestion_control_default_push(void);
 ZENOHC_API
 enum z_congestion_control_t z_internal_congestion_control_default_request(void);
 /**
- * Returns the default congestion control value of zenoh response network messages, typically used for reply operations.
- */
-ZENOHC_API
-enum z_congestion_control_t z_internal_congestion_control_default_response(void);
-/**
  * Returns ``true`` if encoding is in non-default state, ``false`` otherwise.
  */
 ZENOHC_API bool z_internal_encoding_check(const struct z_owned_encoding_t *this_);
