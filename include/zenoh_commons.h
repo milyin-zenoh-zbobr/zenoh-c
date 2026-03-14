@@ -891,11 +891,13 @@ typedef struct z_query_reply_options_t {
   /**
    * @warning This API is deprecated. Reply congestion control is not supported anymore.
    * The congestion control to apply when routing the reply.
+   * @warning This API has been marked as deprecated.
    */
   enum z_congestion_control_t congestion_control;
   /**
    * @warning This API is deprecated. Reply priority is not supported anymore.
    * The priority of the reply.
+   * @warning This API has been marked as deprecated.
    */
   enum z_priority_t priority;
   /**
@@ -927,11 +929,13 @@ typedef struct z_query_reply_del_options_t {
   /**
    * @warning This API is deprecated. Reply congestion control is not supported anymore.
    * The congestion control to apply when routing the reply.
+   * @warning This API has been marked as deprecated.
    */
   enum z_congestion_control_t congestion_control;
   /**
    * @warning This API is deprecated. Reply priority is not supported anymore.
    * The priority of the reply.
+   * @warning This API has been marked as deprecated.
    */
   enum z_priority_t priority;
   /**
