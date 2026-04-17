@@ -151,9 +151,13 @@ pub struct z_query_reply_options_t {
     pub encoding: Option<&'static mut z_moved_encoding_t>,
     /// @warning This API is deprecated. Reply congestion control is not supported anymore.
     /// The congestion control to apply when routing the reply.
+    /// @warning This API has been marked as deprecated.
+    #[deprecated]
     pub congestion_control: z_congestion_control_t,
     /// @warning This API is deprecated. Reply priority is not supported anymore.
     /// The priority of the reply.
+    /// @warning This API has been marked as deprecated.
+    #[deprecated]
     pub priority: z_priority_t,
     /// If set to ``true``, this reply will not be batched. This usually has a positive impact on latency but negative impact on throughput.
     pub is_express: bool,
@@ -209,9 +213,13 @@ pub extern "C" fn z_query_reply_err_options_default(
 pub struct z_query_reply_del_options_t {
     /// @warning This API is deprecated. Reply congestion control is not supported anymore.
     /// The congestion control to apply when routing the reply.
+    /// @warning This API has been marked as deprecated.
+    #[deprecated]
     pub congestion_control: z_congestion_control_t,
     /// @warning This API is deprecated. Reply priority is not supported anymore.
     /// The priority of the reply.
+    /// @warning This API has been marked as deprecated.
+    #[deprecated]
     pub priority: z_priority_t,
     /// If set to ``true``, this reply will not be batched. This usually has a positive impact on latency but negative impact on throughput.
     pub is_express: bool,
